@@ -1,0 +1,14 @@
+=> CSS: Animation vs. Transition
+
+Transition:
+    1. Needs a triggering element (:hover, :focus etc.)
+    2. Only 2 animation states (start and end)
+    3. Used for simpler animations (buttons, dropdown menus and so on)
+    4. Easier to create but not so many animation/effect possibilities
+
+
+Animation @keyframes:
+    1. It can be used for endless animations
+    2. Can set more than 2 states
+    3. No boundaries
+    4. Both use CPU acceleration for a much smoother effect.

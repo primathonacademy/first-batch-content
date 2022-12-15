@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 12px 30px;
+        margin: 40px;
+        background-color: blue;
+        color: #ffffff;
+        font-size: 20px;
+        border: none;
+        border-radius: 6px;
+      }
+
+      button:hover {
+        background-color: red;
+      }
+
+      title:hover {
+        color: red;
+      }
+
+      input {
+        padding: 8px 20px;
+        /* outline: none; */
+      }
+
+      input:hover {
+        border: 2px solid blue;
+      }
+
+      input:focus-visible {
+        /* border: 2px solid red; */
+        outline-color: red;
+      }
+
+      input::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red;
+        opacity: 1; /* Firefox */
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Submit</button>
+    <input type="text" placeholder="Enter your input" />
+
+    <a href="#">Hello Word</a>
+  </body>
+</html>

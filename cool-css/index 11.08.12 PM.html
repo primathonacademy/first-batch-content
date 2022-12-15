@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 72px;
+        background: linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      div,
+      h1 {
+        margin: 30px;
+      }
+
+      div {
+        color: #ffffff;
+        font-size: 80px;
+        font-weight: bold;
+        text-align: center;
+        height: 200px;
+      }
+      /* Linear Gradient */
+      .to-right {
+        background-image: linear-gradient(
+          to right,
+          red,
+          blue
+        ); /*try using to left, to top, to bottom*/
+      }
+      .degree {
+        background-image: linear-gradient(
+          45deg,
+          red,
+          blue
+        ); /*try using other degree values like 0deg,180deg,135deg etc*/
+      }
+      .rainbow {
+        background-image: linear-gradient(
+          to bottom,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          darkblue,
+          purple
+        );
+      }
+      .to-left {
+        background-image: linear-gradient(
+          to left,
+          red 50%,
+          blue
+        ); /*tells red should be upto 50% of width*/
+      }
+
+      .start-stop {
+        background-image: linear-gradient(
+          to right,
+          red,
+          yellow 20% 50%,
+          blue
+        ); /*tells yellow should start from 20% and end in 50%*/
+      }
+
+      .hint {
+        /*   tells the midpoint of red to blue transition should be in 50% hence below is same as the 1st div
+ i.e. linear-gradient(to right,red,blue); 
+  try cahnging it to different value*/
+        background-image: linear-gradient(to right, red, 50%, blue);
+      }
+
+      .multiple {
+        background-image: linear-gradient(
+            217deg,
+            rgba(255, 0, 0, 0.8),
+            rgba(255, 0, 0, 0) 70.71%
+          ),
+          linear-gradient(
+            127deg,
+            rgba(0, 255, 0, 0.8),
+            rgba(0, 255, 0, 0) 70.71%
+          ),
+          linear-gradient(
+            336deg,
+            rgba(0, 0, 255, 0.8),
+            rgba(0, 0, 255, 0) 70.71%
+          );
+      }
+
+      .split {
+        background-image: linear-gradient(
+          to right,
+          red 20%,
+          orange 20% 40%,
+          yellow 40% 60%,
+          green 60% 80%,
+          blue 80%
+        );
+      }
+
+      .redial {
+        height: 500px;
+        background-image: radial-gradient(
+          ellipse,
+          red 20%,
+          orange 20% 40%,
+          yellow 40% 60%,
+          green 60% 80%,
+          blue 80%
+        );
+      }
+
+      .transform {
+        background-color: red;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Linear Gradient is awesome</h1>
+
+    <div class="to-right">To Right</div>
+
+    <div class="degree">Degree</div>
+
+    <div class="rainbow">Rainbow</div>
+
+    <div class="to-left">To Left</div>
+
+    <div class="hint">Hint</div>
+
+    <div class="multiple">Multiple</div>
+
+    <div class="split">Split</div>
+
+    <div class="redial">Redial</div>
+
+    <div class="transform">Transform</div>
+  </body>
+</html>

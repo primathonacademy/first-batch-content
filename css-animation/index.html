@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        margin: 20px;
+        height: 400px;
+        width: 400px;
+        background-color: orangered;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-name: example3;
+        animation-duration: 4s;
+
+        animation-delay: 2s;
+        /* animation-delay: -2s; */
+
+        /* animation-iteration-count: 3; */
+        /* animation-iteration-count: infinite; */
+
+        /* animation-direction: reverse; */
+        /* animation-iteration-count: 2;
+        animation-direction: alternate; */
+        /* animation-direction: alternate-reverse; */
+
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes example3 {
+        0% {
+          background-color: orangered;
+          transform: translate(0, 0);
+        }
+
+        25% {
+          background-color: yellow;
+          transform: translate(100px, -100px);
+        }
+
+        75% {
+          background-color: blue;
+          transform: translate(200px, 100px);
+        }
+
+        100% {
+          background-color: green;
+          transform: translate(100%, 0);
+        }
+      }
+
+      @keyframes example {
+        from {
+          background-color: orangered;
+          /* transform: rotate(0deg), translateX(0); */
+          transform: translateX(0), rotate(0deg);
+        }
+        to {
+          background-color: green;
+          /* transform: rotate(360deg), translateX(100%); */
+          transform: translateX(100%), rotate(0deg);
+        }
+      }
+
+      @keyframes example2 {
+        0% {
+          background-color: orangered;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!-- Make a full circle animation of child square -->
+<!-- Rotating Circle -->

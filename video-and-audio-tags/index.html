@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos & Audios</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      video,
+      audio {
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <video controls width="600">
+      <source src="./assets/flower.webm" type="video/webm" />
+      <source src="./assets/flower.mp4" type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <video width="600" autoplay loop>
+      <source src="./assets/flower.webm" type="video/webm" />
+      <source src="./assets/flower.mp4" type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <video width="600" controls autoplay loop src="./assets/flower.webm">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <video
+      controls
+      src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+      poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+      width="600"
+    >
+      Sorry, your browser doesn't support embedded videos, but don't worry, you
+      can <a href="https://archive.org/details/BigBuckBunny_124">download it</a>
+      and watch it with your favorite video player!
+    </video>
+
+    <video
+      width="600"
+      controls
+      poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg"
+    >
+      <source
+        src="https://archive.org/download/ElephantsDream/ed_hd.ogv"
+        type="video/ogg"
+      />
+      <source
+        src="https://archive.org/download/ElephantsDream/ed_hd.avi"
+        type="video/avi"
+      />
+      <source
+        src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+        type="video/mp4"
+      />
+
+      Your browser doesn't support HTML5 video tag.
+    </video>
+
+    <audio controls src="./assets/t-rex-roar.mp3">
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+  </body>
+</html>
